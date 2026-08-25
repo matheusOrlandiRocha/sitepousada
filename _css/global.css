@@ -1,0 +1,42 @@
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*structure*/
+
+:root {
+
+    /* cores */
+    --cor-primaria: #1F5D4A;
+    --cor-secundaria: #8FB9A5;
+    --cor-destaques: #C9785A;
+    --cor-detalhe: #D9A441;
+    --cor-bg: #F7F1E8;
+
+    --cor-texto: #3B3028;
+
+    /* fontes */
+
+     --fonte-principal: "Montserrat", sans-serif;
+    --fonte-destaque: "Dancing Script", cursive;
+    
+    --txt-padrao: 400 16px/140% var(--fonte-principal);
+    --txt-destaque: 500 18px/140% var(--fonte-destaque);
+    --txt-h2-h3: 600 18px/140% var(--fonte-principal);
+    --txt-h1: 700 20px/140% var(--fonte-principal);
+
+
+}
+
+body {
+
+    font: var(--fonte-principal);
+    color: var(--cor-texto);
+
+    background-color: var(--cor-bg);
+}
