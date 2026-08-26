@@ -22,21 +22,61 @@
 
     /* fontes */
 
-     --fonte-principal: "Montserrat", sans-serif;
+    --fonte-principal: "Montserrat", sans-serif;
     --fonte-destaque: "Dancing Script", cursive;
     
     --txt-padrao: 400 16px/140% var(--fonte-principal);
-    --txt-destaque: 500 18px/140% var(--fonte-destaque);
-    --txt-h2-h3: 600 18px/140% var(--fonte-principal);
-    --txt-h1: 700 20px/140% var(--fonte-principal);
+    --txt-destaque: 500 20px/140% var(--fonte-destaque);
+    --txt-h2-h3: 600 24px/140% var(--fonte-principal);
+    --txt-h1: 700 36px/140% var(--fonte-principal);
 
 
 }
 
 body {
 
-    font: var(--fonte-principal);
+    font: var(--txt-padrao);
+    color: var(--cor-texto);
+    background-color: var(--cor-bg);
+}
+
+h1 {
+
+    font: var(--txt-h1);
     color: var(--cor-texto);
 
-    background-color: var(--cor-bg);
+}
+
+h2,h3 {
+
+    font: var(--txt-h2-h3);
+    color: var(--cor-texto);
+}
+
+p {
+
+    font: inherit;
+    color: var(--cor-texto);
+}
+
+a {
+    font: inherit;
+    color: var(--cor-destaques);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px;
+    transition: 0.5s;
+}
+
+a:hover {
+
+    background-color: var(--cor-destaques);
+    color: var(--cor-bg);
+
+}
+
+ul {
+
+    font: var(--txt-padrao);
+    color: var(--cor-texto);
 }
