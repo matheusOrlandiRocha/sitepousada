@@ -2,8 +2,10 @@
 
 /* HEADER */
 
-
 #cabecalho {
+
+    max-width: 1920px;
+    margin: auto;
 
     display: flex;
     justify-content: space-between;
@@ -32,19 +34,25 @@
 
 }
 
-
+/* Titulo */
 #titulo {
 
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    
-    
+    gap: 2px;
+ 
 }
 
-#titulo p {
-    font: var(--txt-destaque);
+#titulo h1 span {
+    font: var(--txt-destaque-h1);
+}
 
+
+#titulo p {
+
+    font: var(--txt-destaque);
+    text-decoration: overline 1px;
+    
 }
 
 /* MENU */
@@ -55,8 +63,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
-    
+    gap: 12px;
+ 
 }
 
 #menu h2 {
@@ -67,10 +75,36 @@
 #menu ul {
 
     display: flex;
-    gap: 15px;
+    gap: 18px;
 
     list-style: none;
+    flex-wrap: nowrap;
+
 }
 
+#menu a { 
+
+    font: var(--txt-padrao);
+    color: var(--cor-primaria);
+
+    text-decoration: none;
+
+    padding: 6px 8px;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    color: var(--cor-bg);
+    background-color: var(--cor-primaria);
+
+    transform: translateY(-2px);
+}
+
+#menu .link-reserva:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-bg);
+}
 
 

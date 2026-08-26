@@ -24,9 +24,12 @@
 
     --fonte-principal: "Montserrat", sans-serif;
     --fonte-destaque: "Dancing Script", cursive;
+    --fonte-destaque-h1: "Dancing Script", cursive;
+
     
     --txt-padrao: 400 16px/140% var(--fonte-principal);
     --txt-destaque: 500 20px/140% var(--fonte-destaque);
+    --txt-destaque-h1: 700 48px/160% var(--fonte-destaque-h1);
     --txt-h2-h3: 600 24px/140% var(--fonte-principal);
     --txt-h1: 700 36px/140% var(--fonte-principal);
 
@@ -63,16 +66,18 @@ a {
     font: inherit;
     color: var(--cor-destaques);
     text-decoration: none;
-    border-radius: 5px;
-    padding: 3px;
+    border-radius: 10px;
+    padding: 5px;
     transition: 0.5s;
+
+    cursor: pointer;
+
 }
 
 a:hover {
 
     background-color: var(--cor-destaques);
     color: var(--cor-bg);
-
 }
 
 ul {
