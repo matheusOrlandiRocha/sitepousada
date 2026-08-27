@@ -4,7 +4,7 @@
 
 #cabecalho {
 
-    max-width: 1920px;
+    max-width: 1600px;
     margin: auto;
 
     display: flex;
@@ -31,7 +31,18 @@
     width: 140px;
     height: auto;
     flex-shrink: 0;
+    border-radius: 50%;
+    box-shadow: -2px 8px 15px rgba(247, 220, 50, 0.616);
+    transition: 0.5s;
+}
 
+#icone:hover {
+
+    background-color: rgb(247, 240, 171);
+    box-shadow: 2px 2px 50px rgb(247, 240, 171);
+    cursor: pointer;
+    transform: translateY(-5px);
+    
 }
 
 /* Titulo */
@@ -39,7 +50,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0;
  
 }
 
@@ -51,6 +62,7 @@
 #titulo p {
 
     font: var(--txt-destaque);
+    line-height: 1;
     text-decoration: overline 1px;
     
 }
@@ -62,7 +74,9 @@
 
     display: flex;
     flex-direction: column;
+
     align-items: flex-end;
+
     gap: 12px;
  
 }
@@ -84,6 +98,8 @@
 
 #menu a { 
 
+    display: inline-block;
+
     font: var(--txt-padrao);
     color: var(--cor-primaria);
 
@@ -102,9 +118,83 @@
     transform: translateY(-2px);
 }
 
-#menu .link-reserva:hover {
-    background-color: var(--cor-primaria);
+/* Reservas */
+
+#menu .link-reserva {
     color: var(--cor-bg);
+    background-color: var(--cor-destaques);
 }
 
+#menu .link-reserva:hover {
+    
+    color: var(--cor-bg);
+    background-color: var(--cor-primaria);
+}
 
+/* Seções */
+
+.secao {
+
+    max-width: 1600px;
+    margin: auto;
+    padding: 80px 40px;
+}
+
+/* HERO */
+.hero {
+
+    max-width: 1600px;
+    margin: auto;
+    padding: 80px 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-conteudo {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-imagem {
+    margin: 0;
+}
+
+.hero-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 20px;
+}
+
+.hero-imagem figcaption {
+    margin-top: 10px;
+
+    font: var(--txt-destaque);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Botao */ 
+
+.botao {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 12px 22px;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-bg);
+
+    border-radius: 8px;
+
+    font: 600 15px/1 var(--fonte-principal);
+
+    transition: 0.3s ease;
+}
