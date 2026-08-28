@@ -571,21 +571,93 @@
     transform: scale(1.04);
 }
 
-/* Responsividade */
+/* PET FRIENDLY */
 
-    /* [ Chalés ] */
-
-    @media (max-width: 768px) {
-
-    .chales-conteudo {
-        grid-template-columns: 1fr;
-    }
-
+#pet {
+    background-color: var(--cor-bg);
 }
 
-    /* [ Lazer ] */
+.pet-conteudo {
 
-    @media (max-width: 900px) {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* IMAGEM */
+
+.pet-imagem {
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.pet-imagem:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+.pet-imagem img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    transition: transform 0.5s ease;
+}
+
+.pet-imagem:hover img {
+
+    transform: scale(1.04);
+}
+
+
+/* TEXTO */
+
+.pet-texto {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    background-color: var(--cor-bg);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+
+    padding: 25px;
+}
+
+   /* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+/* Tablet */
+
+@media (max-width: 900px) {
 
     .lazer-lista {
         grid-template-columns: repeat(2, 1fr);
@@ -593,21 +665,27 @@
 
 }
 
-    @media (max-width: 600px) {
 
-    .lazer-lista {
+/* Celular */
+
+@media (max-width: 768px) {
+
+    .chales-conteudo,
+    .cafe-conteudo,
+    .pet-conteudo {
         grid-template-columns: 1fr;
+        gap: 35px;
     }
 
 }
 
-    /* [ Café ] */ 
 
-    @media (max-width: 768px) {
+/* Celular pequeno */
 
-    .cafe-conteudo {
+@media (max-width: 600px) {
+
+    .lazer-lista {
         grid-template-columns: 1fr;
-        gap: 35px;
     }
 
 }
