@@ -488,3 +488,126 @@
 
     color: var(--cor-texto);
 }
+
+/* CAFÉ DA MANHÃ */
+
+#cafe {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+}
+
+.cafe-conteudo {
+
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* TEXTO */
+
+.cafe-texto {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    background-color: var(--cor-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.15);
+    padding: 25px;
+}
+
+.cafe-texto h2 {
+
+    margin-bottom: 5px;
+}
+
+
+/* IMAGEM */
+
+.cafe-imagem {
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.cafe-imagem:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+.cafe-imagem img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    transition: transform 0.5s ease;
+}
+
+.cafe-imagem:hover img {
+
+    transform: scale(1.04);
+}
+
+/* Responsividade */
+
+    /* [ Chalés ] */
+
+    @media (max-width: 768px) {
+
+    .chales-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+    /* [ Lazer ] */
+
+    @media (max-width: 900px) {
+
+    .lazer-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+    @media (max-width: 600px) {
+
+    .lazer-lista {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+    /* [ Café ] */ 
+
+    @media (max-width: 768px) {
+
+    .cafe-conteudo {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
