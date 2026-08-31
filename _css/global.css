@@ -68,16 +68,13 @@ a {
     text-decoration: none;
     border-radius: 10px;
     padding: 5px;
-    transition: 0.5s;
 
     cursor: pointer;
-
 }
 
-a:hover {
-
-    background-color: var(--cor-destaques);
-    color: var(--cor-bg);
+a:focus-visible {
+    outline: 3px solid var(--cor-detalhe);
+    outline-offset: 3px;
 }
 
 ul {
